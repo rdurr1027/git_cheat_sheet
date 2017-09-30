@@ -1,1 +1,108 @@
 /* TODO: insert styles here */
+
+body {
+    box-sizing: border-box;
+    border: 1px #262626 solid;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2%;
+    font-family: "Lato", sans-serif;
+}
+
+#contentManager {
+    width: 80%;
+    padding: 5% 10%;
+}
+
+#contentLeft > p.versionTitle, #contentRight > p.versionTitleRight {
+    font-family: "Roboto Black", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 0;
+    text-indent: 2%;
+}
+
+.gitCommandRight, .gitCommand, .commandSummary, .commandSummaryRight {
+    padding: 0 2%;
+}
+
+.commandSummary, .commandSummaryRight {
+    font-family: "Roboto Light", sans-serif;
+}
+
+.versionTitle {
+    background-color: #4757FF;
+    color: #ffffff;
+    padding: 0;
+}
+
+.versionTitleRight {
+    background-color: #FB4E32;
+    color: #ffffff;
+    padding: 0;
+}
+.gitCommand {
+    color: #4757FF;
+    font-family: "Roboto Medium", sans-serif;
+}
+.gitCommandRight {
+    color: #FB4E32;
+    font-family: "Roboto Medium", sans-serif;
+}
+
+#contentBoxLeft, #contentBoxRight {
+    box-sizing: border-box;
+    width: 48%;
+ }
+
+#contentBoxRight {
+    float: right;
+    border: 2px #FB4E32 solid;
+}
+
+#contentBoxLeft {
+    float: left;
+    border: 2px #4757FF solid;
+}
+
+#contentLeft {
+    border-bottom: 2px #4757FF solid;
+}
+
+@media screen and (orientation: landscape) {
+    #toolbar {
+        position: fixed;
+        width: 2.65em;
+        height: 100%;
+    }
+}
+
+
+@media(max-width: 850px) {
+    body {
+        width:60%;
+        height: auto;
+    }
+
+    h1 {
+        text-align: left;
+        margin:0;
+        padding: 4% 0 3% 7%;
+        font-size: 1.5em;
+    }
+
+    #contentManager {
+        padding: 5%;
+        width: 93%;
+    }
+    #contentBoxRight {
+        float: none;
+        width: 96%;
+    }
+    #contentBoxLeft {
+        background-color: #ffffff;
+        width: 96%;
+    }
+}
